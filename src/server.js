@@ -32,11 +32,6 @@ app.post('/api/signup', (req, res) => {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        phoneNumber: req.body.phoneNumber,
-        birthdate: req.body.birthdate,
-        address: req.body.address,
-        place: req.body.place,
-        zip: req.body.zip
     });
 
     newUser.save()
